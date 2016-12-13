@@ -1,0 +1,14 @@
+<div class="container">
+	<% @exercises.each do |exercise| %>
+		<div class="well">
+			Duration : <%= exercise.duration %>
+			<br>
+			Details : <%= exercise.details %>
+			<br>
+			Workout date : <%= exercise.workout_date %>
+		</div>
+	<% end %>
+	<br>
+	<br>
+	<%= link_to "New Exercise", new_exercise_path, class: "btn btn-success" %>	
+</div>
